@@ -13,10 +13,6 @@ const nextConfig: NextConfig = {
     async rewrites() {
         return [
             {
-                source: "/home",
-                destination: "https://kairosapp.vercel.app"
-            },
-            {
                 // Catch-all route for any other blog paths
                 source: "/:path+",
                 destination: "https://kairosapp.vercel.app/:path+"
