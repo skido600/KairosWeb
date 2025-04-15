@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Element, Link as LinkScroll } from "react-scroll";
-import Image from "next/image";
 import Button from "../components/Button";
 
 const Hero = () => {
@@ -14,7 +13,7 @@ const Hero = () => {
             <div className="caption small-2 uppercase text-p3">
               30 Days of Code Challenge
             </div>
-            <h1 className="mb-5 h1 text-p5 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-5xl max-md:leading-12">
+            <h1 className="mb-5 h1 text-p5 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-3xl max-md:leading-tight max-md:text-center">
               programming contest
             </h1>
             <p className="max-w-440 mb-14 body-1 max-md:mb-10 text-s5">
@@ -23,17 +22,8 @@ const Hero = () => {
               learning and project development
             </p>
             <LinkScroll to="features" offset={-100} spy smooth>
-              <Button icon="/images/zap.svg">Get Started </Button>
+              <Button icon="/images/zap.svg">Get Started</Button>
             </LinkScroll>
-          </div>
-          <div className="absolute -top-32 left-[calc(50%-340px)] w-[1230px] pointer-events-none hero-img_res">
-            <Image
-              src="/images/here"
-              alt="hero"
-              width={130}
-              height={60}
-             className="size-1230 max-lg:h-auto"
-            />
           </div>
         </div>
       </Element>
