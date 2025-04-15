@@ -156,7 +156,7 @@
   }
 
   .g5 {
-    background: linear-gradient(#334679, #162561);
+    background: linear-gradient(#98a1b9, #162561);
   }
 
   .g6 {
@@ -274,4 +274,52 @@
   }
 
   /* END of Header */
+    .hero-img_res {
+    @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
+  }
+}
+
+.inner-before::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+  background: linear-gradient(#334679, #0c1838); /* g6 */
+}
+
+.glow-before::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40%;
+  z-index: 4;
+  height: 2px;
+  width: 60%;
+  opacity: 0;
+  transition: all 0.5s;
+  background: linear-gradient(#334679, #162561); /* g5 */
+}
+
+.glow-after::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  z-index: 4;
+  height: 2px;
+  width: 35%;
+  opacity: 0;
+  transition: all 0.5s;
+  background: linear-gradient(to right, transparent, #2ef2ff, transparent); /* g8 */
+}
+
+.group:hover .glow-before::before {
+  left: 1rem;
+  opacity: 0.4;
+}
+
+.group:hover .glow-after::after {
+  left: 60%;
+  opacity: 0.4;
 }
