@@ -34,7 +34,7 @@ const Header = () => {
       spy
       smooth
       activeClass="nav-active"
-      className="base-bold text-p4 uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h-5 max-lg:text-2xl"
+      className="base-bold text-black uppercase transition-colors duration-500 cursor-pointer hover:text-p1 max-lg:my-4 max-lg:h-5 max-lg:text-2xl"
     >
       {title}
     </DynamicLinkScroll>
@@ -50,15 +50,15 @@ const Header = () => {
       <div className="container flex h-14 items-center max-lg:px-5">
         <a className="lg:hidden flex-1 cursor-pointer z-2">
           <Image
-            src="/assets/images/thumbnail.jpg"
+            src="/images/kairoslogo.jpg"
             alt="logo"
-            width={65}
-            height={35}
+            width={55}
+            height={55}
           />
         </a>
         <div
           className={clsx(
-            "w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 max-lg:opacity-0",
+            "w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s1 max-lg:opacity-0",
             isMenuOpen ? "max-lg:opacity-100" : "max-lg:pointer-events-none"
           )}
         >
@@ -121,8 +121,8 @@ const Header = () => {
             className="size-1/2 object-contain"
             src={`/images/${isMenuOpen ? "close" : "magic"}.svg`}
             alt={isMenuOpen ? "Close menu" : "Open menu"}
-            width={40} // Specify the width
-            height={40} // Specify the height
+            width={40}
+            height={40} 
           />
         </button>
       </div>

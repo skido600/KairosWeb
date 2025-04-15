@@ -3,12 +3,12 @@
 /* Custom Theme Setup */
 @theme {
   /* Colors */
-  --color-p1: #2ef2ff;
-  --color-p2: #3c52d9;
+  --color-p1: #b0b0b0;
+  --color-p2: #1a1f36; 
   --color-p3: #c8ea80;
   --color-p4: #eaedff;
   --color-p5: #c4cbf5;
-  --color-s1: #080d27;
+  --color-s1: #ffffff;
   --color-s2: #0c1838;
   --color-s3: #334679;
   --color-s4: #1959ad;
@@ -79,7 +79,6 @@
   --flex-256: 0 0 256px;
   --flex-100: 0 0 100%;
 }
-
 
 @tailwind utilities;
 
@@ -253,7 +252,7 @@
     scrollbar-width: none; /* Firefox */
   }
 
-   /* START of Header */
+  /* START of Header */
   .nav-active {
     @apply text-p3;
   }
@@ -275,5 +274,4 @@
   }
 
   /* END of Header */
-
 }
