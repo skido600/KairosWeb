@@ -43,8 +43,8 @@ const Header = () => {
   return (
     <header
       className={clsx(
-        "fixed top-0 left-0 z-50 w-full py-10 transition-all duration-500 max-lg:py-4",
-        hasScrolled && "py-1 bg-gray-100 backdrop-blur-[10px]"
+        "fixed top-0 left-0 z-50 w-full py-2 transition-all duration-500 max-lg:py-4",
+        hasScrolled && "py-0.5 bg-white backdrop-blur-[8px]"
       )}
     >
       <div className="container flex h-14 items-center max-lg:px-5">
@@ -81,9 +81,9 @@ const Header = () => {
                     )}
                   >
                     <Image
-                      src="/assets/image/thumbnail.jpg"
+                      src="/images/black-logo.png"
                       alt="logo"
-                      width={65}
+                      width={55}
                       height={35}
                     />
                   </DynamicLinkScroll>
@@ -114,7 +114,7 @@ const Header = () => {
           </div>
         </div>
         <button
-          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center"
+          className="lg:hidden bg-black-100 z-2 size-10 border-2 border-p1 rounded-full flex justify-center items-center"
           onClick={() => setIsMenuOpen((preState) => !preState)}
         >
           <Image
