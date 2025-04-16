@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="container">
           <div className="relative z-2 max-w-512 max-lg:max-w-388">
             <div className="caption small-2 uppercase text-p3">
-              30 Days of Code Challenge
+              Code Challenge
             </div>
             <h1 className="mb-5 h1 text-p5 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-3xl max-md:leading-tight max-md:text-center">
               programming contest
