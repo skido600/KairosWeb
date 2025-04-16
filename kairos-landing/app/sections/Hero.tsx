@@ -13,10 +13,10 @@ const Hero = () => {
             <div className="caption small-2 uppercase text-p3">
               Code Challenge
             </div>
-            <h1 className="mb-5 h1 text-p5 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-3xl max-md:leading-tight max-md:text-center">
+            <h1 className="mb-5 h1 text-black-100 uppercase max-lg:mb-7 max-lg:h2 max-md:mb-4 max-md:text-3xl max-md:leading-tight max-md:text-center">
               programming contest
             </h1>
-            <p className="max-w-440 mb-14 body-1 max-md:mb-10 text-s5">
+            <p className="max-w-440 mb-14 body-1 max-md:mb-10 text-black-100">
               The 30 Days of Code with VickyJay challenge is an engaging and
               intensive programming contest designed to foster continuous
               learning and project development
