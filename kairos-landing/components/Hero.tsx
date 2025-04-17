@@ -6,7 +6,6 @@ function Hero() {
       <div className="absolute top-1/3 right-1/4 w-[30%] h-[30%] bg-white/30 rounded-full blur-[80px] opacity-50"></div>
       <div className="absolute bottom-1/3 left-1/4 w-[30%] h-[30%] bg-white/30 rounded-full blur-[80px] opacity-50"></div>
 
-      {/* Content section */}
       <section className="text-white mx-3 md:px-12 max-w-2xl md:max-w-[70%] relative z-10">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-Raleway text-white font-[900] mb-3">
           Code Challenge <br /> programming <br />
