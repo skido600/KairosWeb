@@ -50,7 +50,6 @@ const teamMembers: TeamMember[] = [
     github: "davidkim-qa",
     twitter: "priyapatel_pm",
   },
-
 ];
 
 function Teams() {
@@ -80,9 +79,10 @@ function Teams() {
                     <p className=" font-medium text-[15px]">{member.role}</p>
                   </div>
                 </div>
-                <p className="text-neutral-600 mb-6 text-[13px]">{member.bio}</p>
+                <p className="text-neutral-600 mb-6 text-[13px]">
+                  {member.bio}
+                </p>
 
-                {/* Contact info */}
                 <div className="space-y-2 mb-6">
                   <div className="flex items-center text-neutral-600">
                     <FaEnvelope className="mr-3" />
