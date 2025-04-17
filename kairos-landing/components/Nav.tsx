@@ -25,7 +25,7 @@ export function DesktopNav() {
   return (
     <div>
       <section className="relative z-10">
-        <nav className="text-white flex justify-between py-4 bg-black/40 backdrop-blur-md fixed  top-0 right-0 left-0 items-center px-3 md:px-12">
+        <nav className="text-white flex justify-between border-b border-neutral-700 py-3 backdrop-blur-md fixed  top-0 right-0 left-0 items-center px-3 md:px-12">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -35,7 +35,7 @@ export function DesktopNav() {
               alt="logo"
             />
           </Link>
-          <ul className="md:flex items-center space-x-5 hidden">
+          <ul className="md:flex text-neutral-500 items-center space-x-5 hidden">
             {navigator.map((items, index) => (
               <li key={index}>{items.name}</li>
             ))}
@@ -43,7 +43,7 @@ export function DesktopNav() {
           <div className="space-x-2 md:flex items-center hidden ">
             <Link href="/auth">
               <Button
-                className="bg-[#872341] px-8 py-2 rounded-lg"
+                className="bg-white text-black  px-6 py-2 rounded-lg"
                 name="Get started"
               />
             </Link>
@@ -61,7 +61,7 @@ export function DesktopNav() {
 function MobileNav() {
   return (
     <div className="relative z-50">
-      <nav className="bg-black/40  backdrop-blur-md flex text-center flex-col justify-center top-14 mt-5  mx-3 fixed left-0 right-0 py-5 rounded-2x px-3 my-2 rounded-lg">
+      <nav className="bg-black/40 border border-neutral-700  backdrop-blur-md flex text-center flex-col justify-center top-14 mt-5  mx-3 fixed left-0 right-0 py-5 rounded-2x px-3 my-2 rounded-lg">
         <aside className="text-white">
           <ul className="space-y-8">
             {navigator.map((items, index) => (
