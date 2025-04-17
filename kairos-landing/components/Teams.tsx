@@ -16,12 +16,12 @@ type TeamMember = {
 const teamMembers: TeamMember[] = [
   {
     name: "Treasure uzoma",
-    role: "Backend logic && frontend intergartion",
+    role: "Fullstack Developer",
     bio: "Full-stack developer with 4 years of experience . Passionate about clean code and user experience. heavy on frontend",
-    email: "Treasure343@gamil.com",
+    email: "treasureuzoma650@gamil.com",
     github: "TreasureUzoma",
-    linkedin: "alex-johnson",
-    twitter: "treasure_dev",
+    linkedin: "#",
+    twitter: "idolodev",
   },
   {
     name: "Leowave",
@@ -42,7 +42,7 @@ const teamMembers: TeamMember[] = [
     twitter: "mike_backend",
   },
   {
-    name: "onos Ejoor",
+    name: "Onos Ejoor",
     role: "Backend logic && frontend intergartion",
     bio: "Certified project manager with experience in agile methodologies. Focused on team coordination and efficient delivery.",
     email: "priya@chackton.com",
@@ -66,10 +66,10 @@ function Teams() {
     <main className=" min-h-screen">
       <section className="mx-3 md:px-12 py-12 max-w-7xl ">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-800">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-neutral-800">
             Our Team
           </h1>
-          <p className="text-gray-600 max-w-3xl mx-auto text-[15px]">
+          <p className="text-neutral-600 max-w-3xl mx-auto text-[15px]">
             Meet the talented individuals behind the Chackton project. Our
             diverse team brings together expertise in development, design, and
             project management.
@@ -82,17 +82,17 @@ function Teams() {
               <div className="p-6">
                 <div className="flex items-center gap-5 mb-4">
                   <div>
-                    <h3 className="font-bold text-xl pb-3 text-gray-800">
+                    <h3 className="font-bold text-xl pb-3 text-neutral-800">
                       {member.name}
                     </h3>
                     <p className=" font-medium text-[15px]">{member.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6 text-[13px]">{member.bio}</p>
+                <p className="text-neutral-600 mb-6 text-[13px]">{member.bio}</p>
 
                 {/* Contact info */}
                 <div className="space-y-2 mb-6">
-                  <div className="flex items-center text-gray-600">
+                  <div className="flex items-center text-neutral-600">
                     <FaEnvelope className="mr-3" />
                     <a
                       href={`mailto:${member.email}`}
@@ -104,13 +104,13 @@ function Teams() {
                 </div>
 
                 {/* Social links */}
-                <div className="flex space-x-4 pt-4 border-t border-gray-100">
+                <div className="flex space-x-4 pt-4 border-t border-neutral-100">
                   {member.github && (
                     <a
                       href={`https://github.com/${member.github}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700 hover:text-black transition-colors"
+                      className="text-neutral-700 hover:text-black transition-colors"
                     >
                       <FaGithub size={20} />
                     </a>
@@ -120,7 +120,7 @@ function Teams() {
                       href={`https://linkedin.com/in/${member.linkedin}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700"
+                      className="text-neutral-700"
                     >
                       <FaLinkedin size={20} />
                     </a>
@@ -130,7 +130,7 @@ function Teams() {
                       href={`https://twitter.com/${member.twitter}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-700"
+                      className="text-neutral-700"
                     >
                       <FaXTwitter size={20} />
                     </a>
