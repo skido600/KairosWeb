@@ -22,7 +22,7 @@ export function DesktopNav() {
 
   return (
     <main>
-      <section className="relative z-0 ">
+      <section className="relative z-10 ">
         <nav className="text-white flex justify-between py-2 md:py-4  bg-black/40 backdrop-blur-md fixed  top-0 right-0 left-0 items-center px-3 md:px-12 ">
           <div className="flex  items-center space-x-2">
             <Image
@@ -37,17 +37,17 @@ export function DesktopNav() {
             </p>
           </div>
           <ul className="md:flex items-center space-x-5 hidden">
-             {navigator.map((items, index) => (
+            {navigator.map((items, index) => (
               <li key={index}>{items.name}</li>
             ))}
           </ul>
           <div className="space-x-2 md:flex items-center  hidden ">
-            <Button
-              className="border-[#872341] border  px-8 py-2 rounded-lg"
+            {/* <Button
+              className="border-white border  px-8 py-2 rounded-lg"
               name="Sign in"
-            />
+            /> */}
             <Button
-              className="bg-[#872341] px-8 py-2 rounded-lg"
+              className="bg-white text-black px-8 py-2 rounded-lg"
               name="Get started"
             />
           </div>
@@ -60,11 +60,10 @@ export function DesktopNav() {
     </main>
   );
 }
-
 function MobileNav() {
   return (
-    <main className="">
-      <nav className="bg-black/40  backdrop-blur-md grid grid-cols-3 top-14 mt-5  mx-3 fixed  left-0 right-0 py-4 rounded-2x     px-3 my-2 rounded-lg">
+    <main className="fixed top-14 justify-center items-center left-0 right-0 z-50 px-3">
+      <nav className="bg-black/80 backdrop-blur-md text-center mb-8 rounded-lg  py-4 px-3">
         <aside className="text-white">
           <ul className="space-y-8">
             {navigator.map((items, index) => (
@@ -72,14 +71,12 @@ function MobileNav() {
             ))}
           </ul>
         </aside>
-        <article className="col-span-2">
-          <div className="space-x-2 text-white flex flex-col gap-y-4">
-            <button className="border-[#872341] border text-[13px]  px-2 py-2 rounded-lg">
-              Sign in
-            </button>
-            <button className="bg-[#872341] px-8 py-2 text-[13px] rounded-lg">
-              Get started
-            </button>
+        <article className="">
+          <div className="text-white flex flex-col gap-y-4">
+            <Button
+              className="bg-white text-black border w-full mt-8 border-neutral-300 px-8 py-2 text-[13px] rounded-lg"
+              name="Get started"
+            />
           </div>
         </article>
       </nav>

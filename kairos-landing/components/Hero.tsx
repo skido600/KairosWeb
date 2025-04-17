@@ -1,13 +1,18 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Button from "./props/Button";
 
 function Hero() {
   return (
-    <main className="pt-24 md:pt-36 flex justify-center text-center items-center  bg-[#020202] pb-12">
-      <section className="text-white mx-3 md:px-12 max-w-2xl md:max-w-[70%] ">
+    <main className="pt-24 md:pt-36 flex justify-center h-[90vh] text-center items-center bg-[#020202] pb-12 relative z-0">
+      {/* Background glow/shadow effect */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[50%] bg-[#1a0033]/30 rounded-full blur-[100px] opacity-60"></div>
+      <div className="absolute top-1/3 right-1/4 w-[30%] h-[30%] bg-white/30 rounded-full blur-[80px] opacity-50"></div>
+      <div className="absolute bottom-1/3 left-1/4 w-[30%] h-[30%] bg-white/30 rounded-full blur-[80px] opacity-50"></div>
+
+      {/* Content section */}
+      <section className="text-white mx-3 md:px-12 max-w-2xl md:max-w-[70%] relative z-10">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-Raleway text-white font-[900] mb-3">
-          Code Challenge <br />{" "}
-          <span className="text-[#872341]"> programming</span> <br />
+          Code Challenge <br /> <span className=""> programming</span> <br />
           contest
         </h1>
         <p className="mt-4 text-gray-300/90 text-[15px]">
@@ -17,12 +22,9 @@ function Hero() {
         </p>
 
         <Button
-          className="bg-[#872341] px-8 py-2 text-[13px] rounded-lg mt-4"
+          className="bg-white text-black px-8 py-2 rounded-lg mt-8"
           name="Get started"
         />
-        <div className="flex justify-center items-center mt-4">
-          <Image alt="karos hero" src="/hero.svg" width={300} height={300} />
-        </div>
       </section>
     </main>
   );
