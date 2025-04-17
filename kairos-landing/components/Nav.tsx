@@ -24,13 +24,13 @@ export function DesktopNav() {
 
   return (
     <div>
-      <section className="relative z-0 ">
-        <nav className="text-white flex justify-between py-2 md:py-4  bg-black/40 backdrop-blur-md fixed  top-0 right-0 left-0 items-center px-3 md:px-12 ">
+      <section className="relative z-0">
+        <nav className="text-white flex justify-between py-4 bg-black/40 backdrop-blur-md fixed  top-0 right-0 left-0 items-center px-3 md:px-12">
           <Link href="/">
             <Image
               src="/logo.svg"
-              width={1080}
-              height={1080}
+              width={1099}
+              height={1099}
               className="h-7.5 dark:invert w-fit"
               alt="logo"
             />
