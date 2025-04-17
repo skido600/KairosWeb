@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
     name: "Treasure uzoma",
     role: "Fullstack Developer",
     bio: "Full-stack developer with 4 years of experience . Passionate about clean code and user experience. heavy on frontend",
-    email: "treasureuzoma650@gamil.com",
+    email: "treasureuzomajew650@gamil.com",
     github: "TreasureUzoma",
     linkedin: "#",
     twitter: "idolodev",
