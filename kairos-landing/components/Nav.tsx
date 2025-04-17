@@ -42,10 +42,6 @@ export function DesktopNav() {
             ))}
           </ul>
           <div className="space-x-2 md:flex items-center  hidden ">
-            {/* <Button
-              className="border-white border  px-8 py-2 rounded-lg"
-              name="Sign in"
-            /> */}
             <Button
               className="bg-white text-black px-8 py-2 rounded-lg"
               name="Get started"
