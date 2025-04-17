@@ -4,7 +4,6 @@ import Button from "./props/Button";
 function Hero() {
   return (
     <main className="pt-24 md:pt-36 flex justify-center h-[90vh] text-center items-center bg-[#020202] pb-12 relative z-0">
-      {/* Background glow/shadow effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[50%] bg-[#1a0033]/30 rounded-full blur-[100px] opacity-60"></div>
       <div className="absolute top-1/3 right-1/4 w-[30%] h-[30%] bg-white/30 rounded-full blur-[80px] opacity-50"></div>
       <div className="absolute bottom-1/3 left-1/4 w-[30%] h-[30%] bg-white/30 rounded-full blur-[80px] opacity-50"></div>
