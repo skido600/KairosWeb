@@ -50,15 +50,7 @@ const teamMembers: TeamMember[] = [
     github: "davidkim-qa",
     twitter: "priyapatel_pm",
   },
-  //   {
-  //     name: "David Kim",
-  //     role: "QA Engineer",
-  //     bio: "Detail-oriented tester with automation expertise. Committed to delivering high-quality, bug-free software.",
-  //     email: "david@chackton.com",
-  //     linkedin: "alex-johnson",
-  //     github: "davidkim-qa",
-  //     twitter: "qa_david",
-  //   },
+
 ];
 
 function Teams() {
