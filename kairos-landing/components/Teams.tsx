@@ -45,7 +45,7 @@ const teamMembers: TeamMember[] = [
     name: "Onos Ejoor",
     role: "Backend logic && frontend intergartion",
     bio: "Certified project manager with experience in agile methodologies. Focused on team coordination and efficient delivery.",
-    email: "priya@chackton.com",
+    email: "anos@gmail.com",
     linkedin: "priya-patel-pm",
     github: "davidkim-qa",
     twitter: "priyapatel_pm",
