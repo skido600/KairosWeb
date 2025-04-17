@@ -18,7 +18,7 @@ const teamMembers: TeamMember[] = [
     name: "Treasure uzoma",
     role: "Fullstack Developer",
     bio: "Full-stack developer with 4 years of experience . Passionate about clean code and user experience. heavy on frontend",
-    email: "treasureuzoma650@gamil.com",
+    email: "treasureuzomajew650@gamil.com",
     github: "TreasureUzoma",
     linkedin: "#",
     twitter: "idolodev",
@@ -50,15 +50,6 @@ const teamMembers: TeamMember[] = [
     github: "davidkim-qa",
     twitter: "priyapatel_pm",
   },
-  //   {
-  //     name: "David Kim",
-  //     role: "QA Engineer",
-  //     bio: "Detail-oriented tester with automation expertise. Committed to delivering high-quality, bug-free software.",
-  //     email: "david@chackton.com",
-  //     linkedin: "alex-johnson",
-  //     github: "davidkim-qa",
-  //     twitter: "qa_david",
-  //   },
 ];
 
 function Teams() {
@@ -88,9 +79,10 @@ function Teams() {
                     <p className=" font-medium text-[15px]">{member.role}</p>
                   </div>
                 </div>
-                <p className="text-neutral-600 mb-6 text-[13px]">{member.bio}</p>
+                <p className="text-neutral-600 mb-6 text-[13px]">
+                  {member.bio}
+                </p>
 
-                {/* Contact info */}
                 <div className="space-y-2 mb-6">
                   <div className="flex items-center text-neutral-600">
                     <FaEnvelope className="mr-3" />
