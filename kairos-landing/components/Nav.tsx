@@ -1,8 +1,8 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import Image from "next/image";
 import Link from "next/link";
 import Button from "./props/Button";
 type NavItem = {
@@ -26,12 +26,15 @@ export function DesktopNav() {
     <div>
       <section className="relative z-0 ">
         <nav className="text-white flex justify-between py-2 md:py-4  bg-black/40 backdrop-blur-md fixed  top-0 right-0 left-0 items-center px-3 md:px-12 ">
-          <div className="flex  items-center space-x-2">
-            <Link href="/">
-              <Img src={"/logo.svg"} className="h-7.5 dark:invert w-fit" alt="logo" />
-            </Link>
-            <p className=" text-[22px] font-orbitron md:text-[20px] font-bolder ">Kairos</p>
-          </div>
+          <Link href="/">
+            <Image
+              src="/logo.svg"
+              width={1080}
+              height={1080}
+              className="h-7.5 dark:invert w-fit"
+              alt="logo"
+            />
+          </Link>
           <ul className="md:flex items-center space-x-5 hidden">
             {navigator.map((items, index) => (
               <li key={index}>{items.name}</li>
