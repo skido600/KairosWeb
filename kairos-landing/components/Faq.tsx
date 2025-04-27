@@ -2,7 +2,7 @@ const faqData = [
   {
     question: "How do I create an account?",
     answer:
-      "To create an account, click on the 'Sign Up' button in the top right corner of our homepage. Fill in your details including your name, email address, and password. Once submitted, you'll receive a confirmation email to verify your account.",
+      "To create an account, click on the 'Get started' button in the top right corner of our homepage. Fill in your details including your name, email address, and password. Once submitted, you'll receive a confirmation email to verify your account.",
   },
   {
     question: "What payment methods do you accept?",

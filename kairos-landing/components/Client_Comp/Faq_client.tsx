@@ -32,7 +32,7 @@ function Faq_client({ farData }: farmainData) {
               onClick={() => toggleItem(index)}
               aria-expanded={openItems.includes(index)}
               aria-controls={`faq-answer-${index}`}>
-              <span className=" font-medium text-gray-900 text-xl">
+              <span className=" font-medium text-gray-900 text-[16px]">
                 {item.question}
               </span>
               <FaChevronDown
@@ -51,7 +51,9 @@ function Faq_client({ farData }: farmainData) {
               }`}
               aria-hidden={!openItems.includes(index)}>
               <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                <p className="text-gray-700">{item.answer}</p>
+                <p className="text-gray-700 md:text-lg  leading-relaxed text-sm">
+                  {item.answer}
+                </p>
               </div>
             </div>
           </div>
